@@ -8,6 +8,9 @@
     background-color: white;
 }
 
+
+/* Header */
+
 .header {
     grid-area: header;
     padding-left: 8vw;
@@ -19,22 +22,8 @@
     background-color: rgb(235, 239, 255);
 }
 
-.previous_button {
-    width: 2.5em;
-    height: 2.5em;
-}
 
-
-/* Texto - "Bem vindo(a) de volta!" */
-
-.welcome_back {
-    height: 10vh;
-    padding-top: 5vh;
-    padding-left: 8vw;
-}
-
-
-/* Form - Login */
+/* Form - Register */
 
 .form_itens {
     grid-area: form_itens;
@@ -46,6 +35,27 @@
 
 form {
     display: block;
+}
+
+.select_div {
+    width: 83vw;
+    height: 6vh;
+    margin-top: 1vh;
+    padding: 10px 20px 12px 10px;
+    border: 1px solid rgba(145, 159, 229, 1);
+    border-radius: 10px;
+        box-sizing: border-box;
+}
+
+select {  
+    display: inline-block;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+option {
+    padding: 0px 2px 1px;
 }
 
 form label {
@@ -61,81 +71,22 @@ form input {
     height: 6vh;
     margin-top: 1vh;
     padding: 2vh;
-    border-radius: 10px;
-    border: solid 1px rgb(223, 228, 254);
+
     background-color: rgb(223, 228, 254);
-}
-
-select {  
-    width: 100%;
-    display: inline-block;
-    border: none;
-    outline: none;
-}
-
-#select {
-    width: 83vw;
-    height: 6vh;
-    margin-top: 1vh;
-    padding: 10px 20px 12px 10px;
-    border: 1px solid rgba(145, 159, 229, 1);
+    border: solid 1px rgb(223, 228, 254);
     border-radius: 10px;
-    box-sizing: border-box;
 }
-
-option:after {
-    color: rgb(246, 250, 0);
-    background-color: rgb(5, 26, 1);
-  }
-
-
-  /* Other styles*/
-  body {
-    color: #fff;
-    background: var(--background-gradient);
-  }
-  h1 {
-    margin: 0 0 0.25em;
-  }
-  a {
-    font-weight: bold;
-    color: var(--gray);
-    text-decoration: none;
-    padding: .25em;
-    border-radius: .25em;
-    background: white;
-  }
-  
 
 form input:focus {
     outline: rgb(223, 228, 254);
 }
 
-.forgotPassword {
-    text-align: right;
-    margin-top: 2vh;
-    font-weight: 500;
-}
 
-.loginButton {
-    width: 83vw;
-    height: 8vh;
-    margin-top: 3vh;
-    border-radius: 10px;
-    border: solid 1px rgba(145, 159, 229, 1);
-    background-color: rgba(145, 159, 229, 1);
-    cursor: pointer;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-}
+/* Enter With... */
 
 .enterWith  {
     grid-area: enterWith;
 }
-
-
-/* Buttons and Text - Config */
 
 .textLine {
     height: 6vh;
@@ -166,7 +117,7 @@ form input:focus {
 
     height: 5vh;
     margin-top: -.7vh;
-    margin-right: -13.5%;
+    margin-right: -12vw;
     padding: 1.5%;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -181,9 +132,8 @@ form input:focus {
     align-items: center;
     color: black;
     font-size: 18px;
+    padding: .25em;
 
-    height: 5vh;
-    padding: 1.2%;
     padding-left: 17vw;
     padding-right: 11vw;
 
@@ -192,11 +142,8 @@ form input:focus {
     border-radius: 30px;
 }
 
-option {
-    padding: 0px 2px 1px;
-}
 
-
+/* Previous and Next - Buttons*/
 
 .next-previous-buttons{
     grid-area: next-previous-buttons;
@@ -211,19 +158,16 @@ option {
 .next-previous-buttons button {
     align-items: center;
     color: rgba(145, 159, 229, 1);
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 500;
 
     height: 6vh;
-    
-    padding-left: 8vw;
-    padding-right: 8vw;
 
     background-color: white;
     border: solid 0px ;
 }
 
-.previous_button {
+.next_button {
     width: 6vh;
     height: 6vh;
 }

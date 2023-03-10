@@ -79,12 +79,12 @@ form input:focus {
     font-weight: 700;
 }
 
+
+/* Enter With... */
+
 .enterWith  {
     height: 24vh;
 }
-
-
-/* Buttons and Text - Config */
 
 .textLine {
     height: 6vh;
@@ -101,6 +101,9 @@ form input:focus {
     margin-left: 25vw;
     background-color: white;
 }
+
+
+/* Buttons Google - Config */
 
 .buttons {
     text-align: center;

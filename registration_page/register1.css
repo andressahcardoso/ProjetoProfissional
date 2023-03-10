@@ -12,7 +12,7 @@ body {
     grid-template-rows: 37vh 51vh 12vh;
     grid-template-areas: 'text-description'
                          'textWelcome'
-                         'button-login-register';        
+                         'next-previous-buttons';        
     background-color: white;
 }
 
@@ -37,23 +37,19 @@ body {
     padding-right: 24vw;
 }
 
-.textTitle {
-    font-size: 24px;
-}
-
-.text {
-    text-align: justify;
-}
-
-
-
-.button-login-register {
-    grid-area: button-login-register;
-        display: inline-block;
+.next-previous-buttons {
+    grid-area: next-previous-buttons;
+    height: 10vh;
+    padding-left: 8vw;
+    padding-right: 8vw;
+        display: flex;
+        justify-content: space-between;
+        align-content: center; /* Alinhar no centro - VERTICAL */
+        flex-wrap: wrap;  /* Alinhar no centro - VERTICAL */
 }
 
 
-/* Text - Configs */
+/* Text Description - Config */
 
 .title {
     display: block;
@@ -73,34 +69,18 @@ p {
 }
 
 
+/* Text Welcome - Config */
+
+.textTitle {
+    font-size: 24px;
+}
+
+.text {
+    text-align: justify;
+}
+
+
 /* Buttons - Config */
-
-.buttons {
-    text-align: center;
-    margin-top: 2%;
-}
-
-
-
-
-.main_title {
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.575);    
-}
-
-
-.next-previous-buttons{
-    height: 10vh;
-    padding-left: 8vw;
-    padding-right: 8vw;
-        display: flex;
-        justify-content: space-between;
-        align-content: center; /* Alinhar no centro - VERTICAL */
-        flex-wrap: wrap;  /* Alinhar no centro - VERTICAL */
-}
 
 .next-previous-buttons button {
     align-items: center;
@@ -121,4 +101,9 @@ p {
 .previous_button {
     width: 6vh;
     height: 6vh;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 2%;
 }
