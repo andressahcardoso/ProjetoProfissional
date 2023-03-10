@@ -13,15 +13,57 @@
 
 .header {
     grid-area: header;
+    padding-top: 4vh;
     padding-left: 8vw;
     padding-right: 8vw;
+    width: 100%;
         display: flex;
+        justify-content: center; /* Alinhar no centro - HORIZONTAL */
         align-content: center; /* Alinhar no centro - VERTICAL */
         flex-wrap: wrap;  /* Alinhar no centro - VERTICAL */
-
-    background-color: rgb(235, 239, 255);
 }
 
+
+.column {
+    display: flex;
+        justify-content: center; /* Alinhar no centro - HORIZONTAL */
+        align-content: center; /* Alinhar no centro - VERTICAL */
+        flex-wrap: wrap;  /* Alinhar no centro - VERTICAL */
+}
+
+
+.steps {
+    height: 6vh;
+    width: 6vh;
+    padding: 1vh;
+    text-align: center;
+    border: solid 3px rgba(145, 159, 229, 1);
+    border-radius: 50%;
+    color: rgba(145, 159, 229, 1);
+}
+
+.conclued {
+    background-color: rgba(145, 159, 229, 1);
+    color: white;
+}
+
+.line {
+    height: 3vh;
+    width: 8vh;
+    border-bottom: solid 3px rgba(145, 159, 229, 1);
+}
+
+.information_step {
+
+}
+
+.quiz_step {
+   
+}
+
+.theme_step {
+    text-align: center;
+}
 
 /* Form - Register */
 
